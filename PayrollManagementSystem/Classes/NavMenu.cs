@@ -6,17 +6,14 @@ using System.Web;
 
 namespace PayrollManagementSystem
 {
-    public class Main
+    public class NavMenu
     {
         public static int GetCount(IEnumerable<Menu> menu, int ID)
         {
             int count = 0;
             foreach (var item in menu)
             {
-                if (item.MainID == ID)
-                {
-                    count++;
-                }
+                if (item.MainID == ID) count++;
             }
             return count;
         }
@@ -39,5 +36,7 @@ namespace PayrollManagementSystem
             }
             return subMenu;
         }
+
+    
     }
 }

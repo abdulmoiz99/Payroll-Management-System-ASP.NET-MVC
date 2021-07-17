@@ -35,15 +35,11 @@ namespace PayrollManagementSystem
         }
         public static SqlConnection Con
         {
-
             get
             {
                 return con;
             }
         }
-
-
-
         public static String ScalarQuery(String Query)
         {
             String Result = string.Empty;

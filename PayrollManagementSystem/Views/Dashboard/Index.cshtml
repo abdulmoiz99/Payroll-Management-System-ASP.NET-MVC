@@ -28,9 +28,9 @@
                 <ul class="navbar-nav text-light" id="accordionSidebar">
                     @foreach (var menuItem in Model)
                     {
-                        if (Main.GetCount(Model, menuItem.Id) > 0)
+                        if (NavMenu.GetCount(Model, menuItem.Id) > 0)
                         {
-                            var subMenu = Main.GetSubMenuItem(Model, menuItem.Id);
+                            var subMenu = NavMenu.GetSubMenuItem(Model, menuItem.Id);
 
                             <li class="nav-item dropdown" data-bss-hover-animate="pulse">
                                 <a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#"><strong>@menuItem.Title</strong>  </a>
