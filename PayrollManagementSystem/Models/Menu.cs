@@ -16,5 +16,7 @@ namespace PayrollManagementSystem.Models
         public string Title { get; set; }
 
         public string Name { get; set; }
+
+        public int Count { get; set; }
     }
 }
